@@ -1,0 +1,176 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    ---bacgroundMenu:rgba(0, 0, 0, 0.8);
+    ---bacgroundSection:rgba(0, 0, 0, 0.8);
+    ---fundo: #3c3c3c;
+    ---vermEscuro: #961519;
+    ---vermClaro: #d81f26;
+    ---letras: white;
+    ---letrasHoverMenu: rgb(255, 238, 0);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(/imagens/wallpaper.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h2, h3 {
+    font-family: 'Bebas Nueve', sans-serif;
+}
+/*ICONES - FOOTER*/
+.lg1{
+    width: 2.5rem;
+}
+.lg11{
+    width: 3rem;
+}
+.lg22{
+    width: 4rem;
+}
+.lg2{
+    width: 3.3rem;
+} 
+.lg3{
+    width: 3.5rem;
+} 
+.lg4{
+    width: 2.9rem;
+    
+}
+.lg5{
+    width: 4rem;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+}
+/*TOP AND MENU*/
+header{
+    width: 100vw;
+    display: flex;
+    background-color: var(---bacgroundMenu);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    top: 0;
+    position: fixed;
+}
+header > picture> img{
+    width: 13rem;
+}
+header > nav > ul{
+   list-style: none;
+   display: flex;
+   gap:2rem
+}
+header > nav > ul > li > a{
+    text-decoration: none;
+    background-color: var(---vermEscuro);
+    color: var(---letras);
+    padding: 0.6rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    transition: 0.3s;
+}
+header > nav > ul > li > a:hover{
+    background-color: var(---vermClaro);
+    color: var(---letrasHoverMenu);
+}   
+/* MAIN */
+main{
+    margin-top: 8rem;
+    padding: 0.5rem;
+}
+main > section{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(---bacgroundSection);
+    margin-bottom: 1rem;
+}
+main > section > h2{
+    color: var(---letras);
+    padding-bottom: 0.5rem;
+} 
+main > section > article.titulos{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* CONFIGURAÇÃO DO H3*/
+.filme > div {
+    width: 10rem;
+    background-color: var(---vermEscuro);
+    color: var(---letras);
+    font-size: 0.9rem;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0.2rem 0.6rem;
+}
+/* CONFIGURAÇÃO DOs CARDS*/
+.filme > picture > img {
+   width: 15rem;
+   border: 0.3rem solid var(---vermEscuro);
+   box-shadow: 5px 5px 10px black inset;
+}
+
+/*FOOTER -  Flex Gridd*/
+footer{
+    color:var(---letras);
+    padding: 1rem;
+    background-color: var(---bacgroundSection);
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+}
+.footer-socians{
+    padding: 1rem;
+    border-right: 0.1rem solid var(---vermEscuro);
+}
+.footer-contact{
+    padding: 1rem;
+   
+}
+.footer-description{
+    padding: 1rem;
+    border-right: 0.1rem solid var(---vermEscuro);
+}
+.footer-description > p{
+    margin-top: 1.5rem;
+    text-align: justify;
+    font-size: 0.9rem;
+    text-indent: 1rem;
+}
+.footer-description > .dire{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(---letrasHoverMenu);
+}
+.footer-socians > h4,
+.footer-contact > h4,
+.footer-description > h4{
+    color: var(---letrasHoverMenu);
+    margin-bottom: 1rem;
+}
+.footer-socians > ul,
+.footer-contact > ul{
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+

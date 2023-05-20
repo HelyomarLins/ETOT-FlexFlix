@@ -1,0 +1,101 @@
+/*MOBILE FIRST*/
+/*TOP AND MENU*/
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: var(---bacgroundMenu);
+    align-items: center;
+    padding: 1rem 2.5rem;
+    gap: 2rem;
+    top: 0;
+    position: fixed;
+}
+header > picture> img{
+    width: 15rem;
+}
+header > nav > ul{
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+header > nav > ul > li > a{
+    text-decoration: none;
+    background-color: var(---vermEscuro);
+    color: var(---letras);
+    padding: 0.6rem 16rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    transition: 0.3s;
+}
+header > nav > ul > li > a:hover{
+    background-color: var(---vermClaro);
+    color: var(---letrasHoverMenu);
+}
+main{
+    margin-top: 16rem;
+    padding: 1rem;
+}
+main > section > h2{
+    color: var(---letras);
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+main > section > article.titulos{
+    justify-content: center;
+    gap: 1rem;
+}
+/*CONFIGURAÇÃO DAS IMG´s*/
+.filme > picture > img {
+    width: 10rem;
+    border: 0.3rem solid var(---vermEscuro);
+    box-shadow: 5px 5px 10px black inset;
+}
+/* CONFIGURAÇÃO DO H3 CARDS*/
+.filme > div {
+    width: 8rem;
+    background-color: var(---vermEscuro);
+    color: var(---letras);
+    font-size: 0.7rem;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0.2rem 0.6rem;
+}
+
+/*FOOTER*/
+footer{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+footer > div.footer-content{
+    display: flex;
+    flex-direction: column;
+ }
+.footer-socians > ul,
+.footer-contact > ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0.5rem;
+}
+.footer-socians > h4,
+.footer-contact > h4,
+.footer-description > h4{    
+    color: var(---letrasHoverMenu);
+    font-size: 1rem;
+}
+.footer-description,
+.footer-socians > ul{
+    border-bottom: solid 0.1rem var(---vermEscuro);
+}
+.footer-description > p{
+    color: var(---letras);
+    font-size: 0.8rem;
+    text-align: center;
+    text-indent: 0.8rem;
+}
+.footer-description > .dire{
+    text-align: center;
+    padding: 1rem;
+}
