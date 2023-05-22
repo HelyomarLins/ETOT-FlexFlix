@@ -21,7 +21,7 @@ html{
 }
 body {
     background-color:var(---fundo) ;
-    background: url(imagens/wallpaper.jpeg);
+    background: url(../imagens/wallpaper.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
